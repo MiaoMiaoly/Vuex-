@@ -1,0 +1,37 @@
+.fade-out-enter-active,
+.fade-out-leave-active,
+.fade-in-enter-active,
+.fade-in-leave-active {
+  will-change: transform;
+  transition: all 500ms;
+  height: 100%;
+  top: 46px;
+  position: absolute;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+.fade-out-enter {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+.fade-out-leave-active {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.fade-in-enter {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.fade-in-leave-active {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.clearfix{overflow:auto;_height:1%}
+.text-center{
+  text-align: center;
+}
+.td-box-shadow{
+  box-shadow: 1px 1px 5px #aaa;
+}
+
